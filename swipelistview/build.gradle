@@ -3,14 +3,14 @@ buildscript {
 	group = GROUP
 	version = VERSION_NAME
 
-	repositories {
-		maven { url 'http://clinker.47deg.com/nexus/content/groups/public' }
-		maven { url "${System.env.HOME}/.m2/repository" }
-	}
+//	repositories {
+//		maven { url 'http://clinker.47deg.com/nexus/content/groups/public' }
+//		maven { url "${System.env.HOME}/.m2/repository" }
+//	}
 
 	dependencies {
-		classpath 'com.android.tools.build:gradle:0.13.2'
-		classpath 'com.github.dcendents:android-maven-plugin:1.0'
+		classpath 'com.android.tools.build:gradle:1.0.0'
+//		classpath 'com.github.dcendents:android-maven-plugin:1.0'
 	}
 }
 
@@ -18,15 +18,15 @@ group = GROUP
 version = VERSION_NAME
 
 apply plugin: 'com.android.library'
-apply plugin: 'android-maven'
+//apply plugin: 'android-maven'
 
 
 android {
-	compileSdkVersion 19
-	buildToolsVersion '19.1.0'
+	compileSdkVersion 21
+	buildToolsVersion '21.1.2'
 
 	defaultConfig {
-		targetSdkVersion 19
+		targetSdkVersion 21
 	}
 
 	lintOptions {
@@ -37,14 +37,14 @@ android {
 sourceCompatibility = JavaVersion.VERSION_1_6
 targetCompatibility = JavaVersion.VERSION_1_6
 
-repositories {
-	maven { url 'http://clinker.47deg.com/nexus/content/groups/public' }
-	maven { url 'https://clinker.47deg.com/nexus/content/repositories/releases' }
-	maven { url "${System.env.HOME}/.m2/repository" }
-}
+//repositories {
+//	maven { url 'http://clinker.47deg.com/nexus/content/groups/public' }
+//	maven { url 'https://clinker.47deg.com/nexus/content/repositories/releases' }
+//	maven { url "${System.env.HOME}/.m2/repository" }
+//}
 
 dependencies {
-	compile 'com.android.support:appcompat-v7:19.1.0'
+	compile 'com.android.support:appcompat-v7:21.0.3'
 
 	compile 'com.nineoldandroids:library:2.4.0'
 }
