@@ -3,10 +3,11 @@ buildscript {
 	group = GROUP
 	version = VERSION_NAME
 
-//	repositories {
+	repositories {
 //		maven { url 'http://clinker.47deg.com/nexus/content/groups/public' }
 //		maven { url "${System.env.HOME}/.m2/repository" }
-//	}
+		mavenCentral()
+	}
 
 	dependencies {
 		classpath 'com.android.tools.build:gradle:1.0.0'
