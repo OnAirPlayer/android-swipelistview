@@ -47,5 +47,6 @@ targetCompatibility = JavaVersion.VERSION_1_6
 dependencies {
 	compile 'com.android.support:appcompat-v7:21.0.3'
 
-	compile 'com.nineoldandroids:library:2.4.0'
+	// Use all libraries on the libs dir
+	compile fileTree(dir: 'libs', include: ['*.jar'])
 }
